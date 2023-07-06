@@ -1,0 +1,259 @@
+body{
+    background-color: black;
+    color: white;
+}
+#header{
+    width:100%;
+    height:100vh;
+}
+
+.parent-container{
+    background-color: black;
+    margin:0;
+    padding:0;
+}
+.name-cls{
+    color: white;
+    width: 50%;
+    margin-left: 3%;
+    font-size: 2.5rem;
+}
+.navigation-cls{
+    width: 50%;
+    font-size: larger;
+}
+.navigation-cls ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.navigation-cls ul li  a{
+    text-decoration: none;
+    position: relative;
+}
+.navigation-cls ul li ::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    background:  #76B947;
+    transition: 0.5s;
+}
+a:hover{
+    color: #76B947;
+}
+.navigation-cls ul li  a:hover::after{
+width: 100%;
+
+}
+
+.info-cls{
+    color: white;
+
+}
+.header-container{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content{
+    color: #76B947;
+    display: flex;
+    justify-content: space-between;
+}
+.text-cls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    font-size: 2rem;
+}
+.img-cls{
+    background-color: black;
+}
+.img-cls img{
+    mix-blend-mode: screen;
+    border-radius: 5px;
+}
+.dev-img{
+height: 30rem;
+width: 40rem;
+
+}
+
+#about{
+    padding:40px 0;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.about-col-img{
+    flex-basis: 35%;
+}
+.about-col-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-text{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   background: #76B947;
+   transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    padding-inline-start: 0px;
+
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li {
+
+    color:#76B947;
+    font-size: 1.25rem;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+#projects{
+    padding: 0px 0;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div{
+    background: #262626;
+    padding:40px;
+    font-size: 13px;
+    font-weight: 300px; 
+    border-radius: 10px;
+    transition:background 0.5s, transform 0.5s;
+}
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.projects-list div:hover{
+    background: #243d11;
+   transform: translateY(-10px);
+}
+
+.contact-left{
+    flex-basis: 35%;
+    margin-left:2%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+  
+
+}
+
+.contact-left p i{
+    color: #243d11;
+    margin-right:5px;
+    font-size: 20px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size:30px;
+   margin-right:15px;
+   color: white;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+   color:#243d11;
+   transform: translateY(-5px);
+}
+.btn-cls-cv{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #243d11;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 5px;
+}
+.btn-cls-cv a{
+   color: white;
+   text-decoration: none;
+}
+.btn-cls{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #243d11;
+    margin-top: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 5px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.container{
+    margin: 50px 0px;
+    height: 25rem;
+}
